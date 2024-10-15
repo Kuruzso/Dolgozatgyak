@@ -43,11 +43,23 @@ namespace Dolgozatgyak.Controllers
 
             return jegyek;
         }
+        [HttpPost]
+        public IActionResult Post([FromBody] Doga jegyek)
+        {
+            conn.Connection.Open();
 
+            string sql = "INSERT INTO `dogak` (Jegy, Leiras, Letrehozas_ideje) VALUES (@Jegy, @Leiras, NOW());";
 
+            MySqlCommand cmd = new MySqlCommand(sql, conn.Connection);
 
+            cmd.Parameters.AddWithValue("@Jegy", jegyek.Jegy);
+            cmd.Parameters.AddWithValue("@Leiras", jegyek.Leiras);
 
+            cmd.ExecuteNonQuery();
+            conn.Connection.Close();
+            return Ok("Siker");
+               
 
-
+        }
     }
 }

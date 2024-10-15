@@ -18,5 +18,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Post",
+    "RelativePath": "Doga",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jegyek",
+        "Type": "Dolgozatgyak.Models.Doga",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
