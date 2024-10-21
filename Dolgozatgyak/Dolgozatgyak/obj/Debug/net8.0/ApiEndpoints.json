@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Get",
+    "RelativePath": "Doga",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Dolgozatgyak.Models.Doga, Dolgozatgyak, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Post",
+    "RelativePath": "Doga",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jegyek",
+        "Type": "Dolgozatgyak.Models.Doga",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Put",
+    "RelativePath": "Doga/{Azon}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Azon",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "jegyek",
+        "Type": "Dolgozatgyak.Models.Doga",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Get",
+    "RelativePath": "Doga/{Azon}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Azon",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dolgozatgyak.Controllers.ValuesController",
+    "Method": "Delete",
+    "RelativePath": "Doga/{Azon}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Azon",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
